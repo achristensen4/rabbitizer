@@ -26,7 +26,7 @@ jobs:
 
     - name: Check if there are tables changes
       id: tables_changes
-      uses: tj-actions/verify-changed-files@v14
+      uses: tj-actions/verify-changed-files@v17
 
     - name: tables changes
       if: steps.tables_changes.outputs.files_changed == 'true'

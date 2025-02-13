@@ -20,7 +20,7 @@ jobs:
 
     - name: Check if there are format changes
       id: format_changes
-      uses: tj-actions/verify-changed-files@v14
+      uses: tj-actions/verify-changed-files@v17
 
     - name: format changes
       if: steps.format_changes.outputs.files_changed == 'true'
@@ -45,7 +45,7 @@ jobs:
 
     - name: Check if there are tidy changes
       id: tidy_changes
-      uses: tj-actions/verify-changed-files@v14
+      uses: tj-actions/verify-changed-files@v17
 
     - name: tidy changes
       if: steps.tidy_changes.outputs.files_changed == 'true'
